@@ -1,0 +1,115 @@
+<!doctype html>
+ <html>
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+        <title>Formulario de contacto</title>
+        <meta charset="UTF-8">
+        <!--aqui empieza el cuerpo del docuemnto-->
+    </head>
+    <body bgcolor="yellowgreen">
+        <h1 align="center">Formulario de contacto</h1>
+        <form action="">
+            <table align="center" border="1">
+                <tr>
+                    <td colspan="2" align="center">identificador del usuario:
+                        <input placeholder="usu_012345" type="text" name="identificación">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Email:
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">nombre:
+                        <input type="text" name="nombre">
+                    </td>
+                    <td align="left">apellidos:
+                        <input type="text" name="apellidos">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">contraseña:
+                        <input type="text" name="contraseña">
+                    </td>
+                    <td align="left">confirmar contraseña:
+                        <input type="password" name="confirmanción">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="phone">Introduce tu número de teléfono</label>
+                    </td>
+                    <td align="left">
+                        <input type="telf" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required>
+                        <small> Formato:123-456-7890</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">sexo
+                    <td align="left">
+                        <fieldset>
+                            <input type="radio" id="Hombre" name="género">
+                            <label for="Hombre">Hombre</label>
+                            <input type="radio" id="Mujer" name="género">
+                            <label for="Mujer">Mujer</label>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">País
+                        <label for="browser">Elige tu país en la lista</label>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="España"></option>
+                            <option value="Suiza"></option>
+                            <option value="Rumanía"></option>
+                            <option value="Kosovo"></option>
+                            <option value="Iraq"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="comentarios">Problemas personales o errores en la información  
+                    </td>
+                    <td align="left">
+                        <textarea id="comentarios" name="comentarios" rows="5" cols="53"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Subir foto del problema/error
+                    <td align="left">
+                        <input type="file" name="fichero">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inicio">Fecha en la que se manda el formulario</label>
+                    </td>
+                    <td>
+                        <input type="date" id="envio" name="trip-start" 
+                        value="2024-11-22"
+                        min="2024-11-22" max="2025-11-22">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="reset" value="reset">
+                    </td>
+                    <td align="center">
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="modificar datos" disabled>
+                    </td>
+                </tr>
+        </form>
+        <script src="JS/eventos.js"></script>
+    </body>
+ </html>
