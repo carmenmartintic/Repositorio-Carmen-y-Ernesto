@@ -90,11 +90,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Si todo está correcto, enviar el formulario
             alert("Formulario enviado correctamente.");
-            this.submit(); // Ahora sí se envía el formulario
+            this.submit();
         });
     });
 
-    //Codigo de las paginas web
     let colorButton = document.getElementById("cambia");
         colorButton.addEventListener("click", function() {
             document.body.style.backgroundColor = "red";
