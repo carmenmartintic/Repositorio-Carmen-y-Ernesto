@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("titulo").addEventListener("click", function() {
         document.body.style.backgroundColor = "lightblue";
     });
+ // Evento click: Cambiar color de fondo al hacer click en el título
+ document.getElementById("button").addEventListener("click", function() {
+    document.body.style.backgroundColor = "lightgreen";
+});
 
 
     // Evento dblclick: Cambiar tamaño y título
