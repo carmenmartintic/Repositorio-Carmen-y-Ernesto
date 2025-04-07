@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {                                           
-    // Evento click: Cambiar color de fondo al hacer click en el título
+    // Evento click
     document.getElementById("titulo").addEventListener("click", function() {
         document.body.style.backgroundColor = "lightblue";
     });
- // Evento click: Cambiar color de fondo al hacer click en el título
+ // Evento click
  document.getElementById("button").addEventListener("click", function() {
     document.body.style.backgroundColor = "lightgreen";
 });
 
 
-    // Evento dblclick: Cambiar tamaño y título
+    // Evento dblclick
     document.getElementById("titulo").addEventListener("dblclick", function() {
         this.style.color = "red";
         this.style.fontSize = "5em";
     });
 
-    // Evento mouseover y mouseout: Cambiar borde y opacidad de las imágenes
+    // Evento mouseover y mouseout
     
     var fotos = document.querySelectorAll("#img1");
     for (var i = 0; i < fotos.length; i++) {
@@ -30,22 +30,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
         
 
-    // Evento keydown: Detectar cuando el usuario presiona una tecla y mostrarlo
+    // Evento keydown:
     document.addEventListener("keydown", function(event) {
         console.log("Tecla presionada: " + event.key);
     });
 
-    // Evento load: Mostrar mensaje cuando la página cargue
+    // Evento load
     window.addEventListener("load", function() {
         alert("Página cargada correctamente");
     });
 
-    // Evento resize: Mostrar ancho y alto de la ventana al cambiar tamaño
+    // Evento resize
     window.addEventListener("resize", function() {
         console.log("Ancho: " + window.innerWidth + ", Alto: " + window.innerHeight);
     });
 
-    // Evento scroll: Mostrar un mensaje cuando el usuario haga scroll
+    // Evento scroll
     window.addEventListener("scroll", function() {
         console.log("Estás desplazándote por la página.");
     });
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //Si se presiona la tecla espacio, se cambia el color de fondo a azul
     document.addEventListener("keydown", function (event) {
         if (event.key === "Escape") { // Verifica si la tecla presionada es "Escape"
-            document.body.style.backgroundColor = "blue"; // Cambia el fondo a azul
+            document.body.style.backgroundColor = "blue"; 
         }
     });
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (errores.length > 0) {
                 alert(errores.join("\n"));
-                return; // Detiene el envío del formulario si hay errores
+                return; 
             }
 
             // Si todo está correcto, enviar el formulario
