@@ -29,44 +29,36 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
         
-
-    // Evento keydown:
     document.addEventListener("keydown", function(event) {
         console.log("Tecla presionada: " + event.key);
     });
 
-    // Evento load
     window.addEventListener("load", function() {
         alert("Página cargada correctamente");
     });
 
-    // Evento resize
     window.addEventListener("resize", function() {
         console.log("Ancho: " + window.innerWidth + ", Alto: " + window.innerHeight);
     });
 
-    // Evento scroll
     window.addEventListener("scroll", function() {
         console.log("Estás desplazándote por la página.");
     });
 
-    //Si se presiona la tecla espacio, se cambia el color de fondo a azul
     document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") { // Verifica si la tecla presionada es "Escape"
+        if (event.key === "Escape") { 
             document.body.style.backgroundColor = "blue"; 
         }
     });
 
-    //Validación formulario
     document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("opinionform").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita el envío automático del formulario
+            event.preventDefault(); 
 
             const telefonoInput = document.getElementById("phone").value.trim();
             const opinionInput = document.getElementById("textopinion").value.trim();
             const fechaInput = document.getElementById("envio").value;
             
-            // Expresión para validar el formato del teléfono (123-456-7890)
             const telefonoRegex = /^\d{3}-\d{3}-\d{3}$/;
 
             const errores = [];
@@ -88,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 return; 
             }
 
-            // Si todo está correcto, enviar el formulario
             alert("Formulario enviado correctamente.");
             this.submit();
         });
