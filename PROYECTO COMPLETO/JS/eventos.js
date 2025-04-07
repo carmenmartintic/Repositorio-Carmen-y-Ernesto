@@ -3,10 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("titulo").addEventListener("click", function() {
         document.body.style.backgroundColor = "lightblue";
     });
+
+
+
  // Evento click
  document.getElementById("button").addEventListener("click", function() {
     document.body.style.backgroundColor = "lightgreen";
 });
+
+
 
 
     // Evento dblclick
@@ -14,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         this.style.color = "red";
         this.style.fontSize = "5em";
     });
+
+
+
     // Evento click
     document.addEventListener("DOMContentLoaded", function() {
         const button = document.querySelectorAll(".btn-click");
@@ -26,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
             i++;
         }
     });
+
+
 
     // Evento mouseover y mouseout
     
@@ -40,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
             this.style.opacity = "8";
         });
     }
-        
+
+
+
     document.addEventListener("keydown", function(event) {
         console.log("Tecla presionada: " + event.key);
     });
@@ -62,6 +74,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.style.backgroundColor = "blue"; 
         }
     });
+
+
+
+    // Validaciones
 
     document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("opinionform").addEventListener("submit", function(event) {
@@ -97,11 +113,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+
     let colorButton = document.getElementById("cambia");
         colorButton.addEventListener("click", function() {
             document.body.style.backgroundColor = "red";
         });
 
+
+        
    
     document.getElementById("imagen1").addEventListener("mouseout", function() {
         this.style.transform = "scale(0.7)";

@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() { 
-// Evento mouseover y mouseout: Cambiar borde y opacidad de las imágenes
+// Evento mouseover y mouseout
     
     var fotos = document.querySelectorAll("#img2");
     for (var i = 0; i < fotos.length; i++) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     //Si se presiona la tecla espacio, se cambia el color de fondo a azul
     document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape") { // Verifica si la tecla presionada es "Escape"
+        if (event.key === "Escape") { 
             document.body.style.backgroundColor = "blue"; // Cambia el fondo a azul
         }
     });
