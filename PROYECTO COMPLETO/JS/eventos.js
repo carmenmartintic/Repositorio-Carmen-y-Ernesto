@@ -14,6 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
         this.style.color = "red";
         this.style.fontSize = "5em";
     });
+    // Evento click
+    document.addEventListener("DOMContentLoaded", function() {
+        const button = document.querySelectorAll(".btn-click");
+        let i = 0;
+    
+        while (i < button.length) {
+            button[i].addEventListener("click", function() {
+                alert(`¡Hiciste clic en el botón #${i + 1}!`);
+            });
+            i++;
+        }
+    });
 
     // Evento mouseover y mouseout
     
